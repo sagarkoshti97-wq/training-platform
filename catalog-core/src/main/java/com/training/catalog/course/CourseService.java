@@ -6,11 +6,18 @@ import java.util.UUID;
 import com.training.catalog.api.CourseDto;
 import com.training.catalog.api.CoursesApi;
 
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+@Service
 public class CourseService implements CoursesApi
 {
 	private CourseRepository courseRepository;
+	
+	public CourseService(CourseRepository courseRepository)
+	{
+		this.courseRepository = courseRepository;
+	}
 
 	@Override
 	@Transactional(readOnly=true)
