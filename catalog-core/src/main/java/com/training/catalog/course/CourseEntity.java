@@ -29,7 +29,7 @@ public class CourseEntity
 	
 	protected CourseEntity(){}
 
-	CourseEntity(UUID id, String title, int capacity, String city, boolean publish) {
+	CourseEntity(UUID id, String title, int capacity, String city, boolean published) {
 		this.id = id;
 		this.title = title;
 		this.capacity = capacity;
