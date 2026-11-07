@@ -27,8 +27,8 @@
         <module>catalog-core</module>
         <module>enrollments-api</module>
         <module>enrollments-core</module>
-        <module>notifications-api</module>
-        <module>notifications-core</module>
+        <!--<module>notifications-api</module>
+        <module>notifications-core</module>-->
         <module>app</module>
     </modules>
 </project>

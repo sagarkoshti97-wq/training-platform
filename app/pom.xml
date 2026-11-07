@@ -28,11 +28,11 @@
             <artifactId>enrollments-core</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>com.training</groupId>
             <artifactId>notifications-core</artifactId>
             <version>${project.version}</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
