@@ -33,13 +33,13 @@ public class CourseController {
 	}
 	
 	@PostMapping("/{id}/publish")
-	public CourseDto publish(@PathVariable UUID id)
+	public CourseDto publish(@PathVariable("id") UUID id)
 	{
 		return courseService.publishCourse(id);
 	}
 
 	@GetMapping("/{id}")
-	public CourseDto getById(@PathVariable UUID id) {
+	public CourseDto getById(@PathVariable("id") UUID id) {
 		return courseService.findById(id)
 				.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Course not Found"));
 	}

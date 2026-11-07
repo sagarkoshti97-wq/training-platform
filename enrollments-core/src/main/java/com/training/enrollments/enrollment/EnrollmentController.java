@@ -29,7 +29,7 @@ public class EnrollmentController {
 	}
 
 	@GetMapping
-	public List<EnrollmentDto> listByCourse(@RequestParam UUID courseId) 
+	public List<EnrollmentDto> listByCourse(@RequestParam("courseId") UUID courseId) 
 	{
 		return enrollmentService.listByCourse(courseId);
 	}
