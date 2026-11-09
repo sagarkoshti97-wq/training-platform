@@ -1,8 +1,8 @@
-target/
-.classpath
-.project
-.settings/
-.idea/
-*.iml
-*.log
+/target/
+**/.settings/
+**/.classpath
+**/.project
+**/*.class
 .DS_Store
+Thumbs.db
+.apt_generated/

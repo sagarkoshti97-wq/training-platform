@@ -1,0 +1,7 @@
+CREATE TABLE courses (
+    id UUID PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    capacity INT NOT NULL,
+    city VARCHAR(100) NOT NULL,
+    published BOOLEAN NOT NULL DEFAULT FALSE
+);
