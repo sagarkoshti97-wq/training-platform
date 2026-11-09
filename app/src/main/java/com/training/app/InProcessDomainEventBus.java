@@ -26,6 +26,7 @@ public class InProcessDomainEventBus implements DomainEventPublisher {
     public void publish(Object event) 
     {
         applicationEventPublisher.publishEvent(event);
+        
     }
 
     @EventListener
